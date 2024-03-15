@@ -236,7 +236,7 @@ fn editor_draw(editor: &mut Editor) {
         crossterm::cursor::MoveTo(width - 64, height),
         crossterm::style::SetColors(Colors::new(Color::Reset, Color::Reset)),
         crossterm::style::Print(format!(
-            "Terminal Size: {} {} editor.lines: {} Chars: {}",
+            "Terminal Size: {} {} lines: {} Chars: {}",
             width,
             height,
             editor.lines.len(),
